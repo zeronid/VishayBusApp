@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "133411676108",
+    "project_id": "vishayba",
+    "storage_bucket": "vishayba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133411676108:android:c153a2fe0740b7667e4769",
+        "android_client_info": {
+          "package_name": "com.example.vishaybusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133411676108-rgpiv3ppge729dp40oeek80ms5slf6uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP85sBVYeZf8neDQ4X3-6ArWjF4copOKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133411676108-rgpiv3ppge729dp40oeek80ms5slf6uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
