@@ -91,18 +91,27 @@ public class InputActivity extends AppCompatActivity {
         if(!TextUtils.isEmpty(busNumber.getText()) && !TextUtils.isEmpty(lineNumber.getText())){
             int hour = cal.get(Calendar.HOUR_OF_DAY);
                 if(hour <= 12){ //Morning time
-                    dbReference.child("Morning").child(busNumber.getText().toString()).child("Time").setValue(Calendar.getInstance().getTime().getHours() + ":" + Calendar.getInstance().getTime().getMinutes());
+                    dbReference.child("Morning").child(busNumber.getText().toString()).child("Time").setValue(Calendar.getInstance().getTime().getHours() + ":" + getMinutes());
                     dbReference.child("Morning").child(busNumber.getText().toString()).child("Main or secondary").setValue(Integer.toString(pressedButton));
                     dbReference.child("Morning").child(busNumber.getText().toString()).child("Line number").setValue(lineNumber.getText().toString());
                     Toast.makeText(this, "Entry added", Toast.LENGTH_SHORT).show();
                 }else{
-                    dbReference.child("Evening").child(busNumber.getText().toString()).child("Time").setValue(Calendar.getInstance().getTime().getHours() + ":" + Calendar.getInstance().getTime().getMinutes());
+                    dbReference.child("Evening").child(busNumber.getText().toString()).child("Time").setValue(Calendar.getInstance().getTime().getHours() + ":" + getMinutes());
                     dbReference.child("Evening").child(busNumber.getText().toString()).child("Main or secondary").setValue(Integer.toString(pressedButton));
                     dbReference.child("Evening").child(busNumber.getText().toString()).child("Line number").setValue(lineNumber.getText().toString());
                     Toast.makeText(this, "Entry added", Toast.LENGTH_SHORT).show();
                 }
+                busNumber.setText("");
+                lineNumber.setText("");
         }else{
             Toast.makeText(this, "Please input bus number and line number.", Toast.LENGTH_SHORT).show();
         }
+    }
+    public String getMinutes(){
+        String time = Integer.toString(Calendar.getInstance().getTime().getMinutes());
+        if(time.length() == 1){
+            time = "0" + time;
+        }
+        return time;
     }
 }
