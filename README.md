@@ -10,6 +10,6 @@
 ##### **This app is using Firebase for data storing.**
 
 ![Log_Or_Watch_Logs_Image](https://i.ibb.co/6r4c98Y/1.jpg)
-![Log](https://i.ibb.co/HY1qWDV/2.jpg)
+![Log](https://i.ibb.co/HY1qWDV/2.jpg)<br>
 ![Pick_A_Date_To_Watch](https://i.ibb.co/WvYB5Zc/3.jpg)
 ![Logs](https://i.ibb.co/L8vK5DL/4.jpg)
